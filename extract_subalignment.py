@@ -31,6 +31,7 @@ def return_range(string):
     range_detect = re.match(r'^(\d+)-(\d+)$', string)
     if range_detect:
         return [x for x in range(int(range_detect[1]), int(range_detect[2]) + 1)]
+    raise Exception(f'Positions should be integer (e.g. "23") or range (e.g "45-48"), but "{string}" provided.')
 
 
 with open(args.aln, 'r') as aln_file:
