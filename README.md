@@ -21,7 +21,8 @@ arguments:
   -r REF, --ref REF     Reference sequence ID in alignment.
   -p POS, --pos POS     Positions in the reference sequence separated by
                         comma.Alternatively - the path to the file with
-                        positions written in one line separated by comma.
+                        positions written in one line separated by comma or dash.
+                        e.g. "1,2,4,6-10" will give 1,2,4,6,7,8,9,10 positons.
   -o OUT, --out OUT     Path to the output alignment file.
   -m OUT_FMT, --out_fmt OUT_FMT
                         Optional argumant. Specifies output format. Key words
